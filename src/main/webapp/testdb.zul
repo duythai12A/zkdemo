@@ -1,0 +1,27 @@
+<window id="win_customer" title="ENTRY CUSTOMER" border="normal" width="100%" use="tutorial.Customer">
+    <grid height="250px" width="100%">
+        <columns>
+            <column width="30%"></column>
+            <column width="30%"></column>
+        </columns>
+        <rows>
+            <row>
+                <label value="ID CUSTOMER"></label>
+                <textbox id="idcust" width="100px"></textbox>
+            </row>
+            <row>
+                <label value="NAME CUSTOMER"></label>
+                <textbox id="namecust" width="100px"></textbox>
+            </row>
+            <row>
+                <label value="ADDRESS"></label>
+                <textbox id="address" width="100px"></textbox>
+            </row>
+
+            <row>
+                <label value=""></label>
+                <button id="save" label="SAVE" onClick="win_customer.saveitem(idcust.getValue(),namecust.getValue(),address.getValue())"></button>
+            </row>
+        </rows>
+    </grid>
+</window>

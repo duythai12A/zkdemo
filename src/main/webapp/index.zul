@@ -1,0 +1,81 @@
+<?page title="CustomerList" contentType="text/html;charset=UTF-8"?>
+<zk>
+    <!--<window border="normal" title="Get ZK Up and Running" >-->
+    <!--	<vlayout>-->
+    <!--		<a href="hello.zul">hello.zul</a>-->
+    <!--		<a href="search.zul">search.zul</a>-->
+    <!--		<a href="searchMvc.zul">searchMvc.zul</a>-->
+    <!--		<a href="searchMvvm.zul">searchMvvm.zul</a>-->
+    <!--		<a href="searchDemo.zul">searchDemo.zul</a>-->
+    <!--		<a href="test.zul">test.zul</a>-->
+    <!--		<a href="testdb.zul">create emp</a>-->
+    <!--		<a href="loadgrid.zul">Mail</a>-->
+    <!--		<a href="ql.zul">Trang quản lí</a>-->
+    <!--	</vlayout>-->
+
+    <!--</window>-->
+<!--    <style>-->
+
+<!--        /* Start: Action Images- Edit-->
+<!--        &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--        .fimageedit-->
+<!--        {-->
+<!--        width: 25px; background-image: url('./images/icon-edit.png');-->
+<!--        background-repeat: no-repeat;-->
+<!--        border: 0 none;-->
+<!--        cursor: pointer;-->
+<!--        }-->
+
+<!--        /* End: Action Images - Edit-->
+<!--        &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+
+<!--        /* Start: Action Images- Delete-->
+<!--        &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+
+<!--        .fimageDelete-->
+<!--        {-->
+<!--        width: 25px; background-image: url('./images/icon-trash-red.png');-->
+<!--        background-repeat: no-repeat;-->
+<!--        border: 0 none;-->
+<!--        cursor: pointer;-->
+<!--        }-->
+
+<!--        /* End: Action Images - Delete-->
+<!--        &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */-->
+<!--    </style>-->
+    <window title="Customer List " border="normal">
+        <div>
+            <button label="Add New Customer" id="addNewCustomerButton"/>
+        </div>
+        <separator/>
+        <listbox id="test">
+            <listhead sizable="true">
+                <listheader label="Last Name" width="400px"
+                />
+                <listheader label="First Name" width="400px"
+                />
+                <listheader label="email" width="400px"
+                />
+                <listheader label="Action"/>
+            </listhead>
+            <template name="model" var="p1">
+                <listitem>
+                    <listcell label="abc"/>
+                    <listcell label="abc"/>
+                    <listcell label="abc"/>
+                    <listcell>
+                        <hbox spacing="20px">
+                            <image sclass="fimageDelete"
+                            />
+                            <image sclass="fimageedit"
+                            />
+                        </hbox>
+                    </listcell>
+                </listitem>
+            </template>
+        </listbox>
+    </window>
+
+</zk>

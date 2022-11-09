@@ -1,0 +1,55 @@
+<zk>
+    <groupbox>
+        <caption label="Thông tin tìm kiếm"/>
+        <grid width="100%">
+            <columns>
+                <column hflex="1"></column>
+                <column hflex="2"></column>
+                <column hflex="1"></column>
+                <column hflex="2"></column>
+            </columns>
+            <rows>
+                <row>
+                    <cell>
+                        <label value="Mã cảnh báo"/>
+                    </cell>
+                    <textbox mold="rounded" hflex="1" maxlength="255"/>
+                    <cell>
+                        <label value="Tên cảnh báo"/>
+                    </cell>
+                    <textbox mold="rounded" hflex="1" maxlength="255"/>
+                </row>
+                <row>
+                    <cell>
+                        <label value="Mã tiến trình"/>
+                    </cell>
+                    <textbox mold="rounded" hflex="1" maxlength="100"/>
+                    <cell>
+                        <label value="Loại cảnh báo"/>
+                    </cell>
+                    <combobox hflex="1">
+                        <comboitem label="Tất cả" value="ALL"/>
+                        <comboitem label="Mail" value="MAIL"/>
+                        <comboitem label="Tin nhắn" value="SMS"/>
+                        <comboitem label="GNOC" value="GNOC"/>
+                    </combobox>
+                </row>
+                <row>
+                    <cell>
+                        <label value="Nguồn cảnh báo"/>
+                    </cell>
+                    <combobox hflex="1">
+                        <comboitem label="Tất cả" value="ALL" />
+                        <comboitem label="Mail" value="MAIL"/>
+                        <comboitem label="Tin nhắn" value="SMS"/>
+                        <comboitem label="GNOC" value="GNOC"/>
+                    </combobox>
+                </row>
+            </rows>
+        </grid>
+        <div align="center">
+            <button label="Tìm kiếm"/>
+            <button label="Thêm mới"/>
+        </div>
+    </groupbox>
+</zk>

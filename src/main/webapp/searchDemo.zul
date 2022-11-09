@@ -1,0 +1,41 @@
+<zk>
+    <window title="Search" width="40%" border="normal" style="margin : auto"
+            apply="tutorial.SearchDemoController">
+<!--        tieu de Search | do rong 40% | khung : normal | cach le : auto(ra giua)-->
+        Keyword :
+        <textbox id="keywordBox"></textbox>
+<!--        text boxt : nhap-->
+        <button id="searchButton" label="Search" iconSclass="z-icon-search" style="margin: 0 0 5px 5px"
+                     />
+<!--        nut co label = search, icon search = iconclass -->
+        <listbox id="carListbox" emptyMessage="No car found" >
+<!--            Neu khong co du lieu thi in ra No car found -->
+            <listhead><!---Tieu de Model,Make,Price-->
+                <listheader label="Model"></listheader>
+                <listheader label="Make"></listheader>
+                <listheader label="Price"></listheader>
+            </listhead>
+            <template name="model">
+                <listitem>
+                    <listcell label="${each.model}"/>
+                    <listcell label="${each.make}"/>
+                    <listcell label="${'$'+=each.price}"/>
+                </listitem>
+            </template>
+<!--            <listitem>-->
+<!--                <listcell label="test1"/>-->
+<!--                <listcell label="test2"/>-->
+<!--                <listcell label="test3"/>-->
+<!--            </listitem>-->
+        </listbox>
+        <hlayout width="100%">
+            <image id="previewImage" width="100%"/>
+            <vlayout>
+                <label id="modelLabel"/>
+                <label id="makeLabel"/>
+                <label id="priceLabel"/>
+                <label id="descriptionLabel"/>
+            </vlayout>
+        </hlayout>
+    </window>
+</zk>

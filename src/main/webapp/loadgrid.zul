@@ -1,0 +1,27 @@
+<window apply="controller.LoadOnDemandController" >
+<div>
+    <grid height="400px" model="&#36;{model}" rowRenderer="&#36;{renderer}">
+        <columns sizable="true">
+            <column label="From" width="100px" />
+            <column label="Subject" />
+            <column label="Received" width="150px" />
+            <column label="Size" width="100px" />
+        </columns>
+<!--        <template name="model:groups">-->
+<!--            <group label="${each}" />-->
+<!--        </template>-->
+<!--        <template name="model">-->
+<!--            <row>-->
+<!--                <div>-->
+<!--                    <image style="padding: 0px 10px"-->
+<!--                           src="/img/EnvelopeOpen-16x16.png" />-->
+<!--&lt;!&ndash;                    <label value="${each.index}" />&ndash;&gt;-->
+<!--                </div>-->
+<!--&lt;!&ndash;                <label value="${each.subject}" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <label value="${each.date}" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <label value="${each.size}" />&ndash;&gt;-->
+<!--            </row>-->
+<!--        </template>-->
+    </grid>
+</div>
+</window>

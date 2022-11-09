@@ -1,0 +1,13 @@
+<Context path="/gettingStarted" docBase="gettingStarted" debug="5"  reloadable="true" crosscContaxt="true">
+    <Resource name="jdbc/apps" auth="Container" type="javax.sql.DataSource"
+              username="root"
+              password="duythai12A@."
+              driverClassName="com.microsoft.mysql.jdbc.MYSQLDriver"
+              maxActive="100"
+              maxIdle="50"
+              maxWait="10000"
+              removeAbandoned="true"
+              logAbandoned="true"
+              removeAbandonedTimeout="60"
+              validationQuery="select 1"/>
+</Context>
